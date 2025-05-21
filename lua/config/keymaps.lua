@@ -26,3 +26,5 @@ vim.keymap.set("v", ">", ">gv")
 --Comments
 vim.api.nvim_set_keymap("n", "<C-_>", "gtc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<C-_>", "goc", { noremap = false })
+
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)

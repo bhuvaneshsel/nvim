@@ -21,8 +21,8 @@ local opts = {
 	},
 	install = {
 		colorscheme = { "cyberdream" },
-	},
-	rtp = {
+  },
+  rtp = {
 		disabled_plugins = {
 			"gzip",
 			"matchit",
@@ -41,5 +41,3 @@ local opts = {
 }
 
 require("lazy").setup("plugins", opts)
-
-  

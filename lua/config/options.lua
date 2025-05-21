@@ -1,9 +1,9 @@
 local opt = vim.opt
 
 -- Tab / Indentation
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.softtabstop = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.softtabstop = 4
 opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
@@ -41,3 +41,12 @@ opt.clipboard:append("unnamedplus")
 opt.modifiable = true
 opt.encoding = "UTF-8"
 opt.showmode = false
+
+--Inline Diagnostics
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true,
+})
